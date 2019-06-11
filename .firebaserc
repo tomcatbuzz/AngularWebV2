@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-pwa-26994": {
+      "hosting": {
+        "angular-webpageV2": [
+          "angular-pwa-26994"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-pwa-26994"
+  }
+}
