@@ -35,7 +35,7 @@ import { MaterialModule } from './material/material.module';
     LayoutModule,
     MaterialModule
   ],
-  providers: [SeoService, UIService, { provide: FirestoreSettingsToken, useValue: {} },],
+  providers: [SeoService, UIService, { provide: FirestoreSettingsToken, useValue: {} }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
