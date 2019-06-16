@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,12 +16,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { SeoService } from './services/seo.service';
 import { UIService } from './services/ui.service';
 import { MaterialModule } from './material/material.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    MainNavComponent
+    MainNavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,11 +31,12 @@ import { MaterialModule } from './material/material.module';
     BrowserAnimationsModule,
     ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
     FlexLayoutModule,
+    MaterialModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     LayoutModule,
-    MaterialModule
+    FormsModule
   ],
   providers: [SeoService, UIService, { provide: FirestoreSettingsToken, useValue: {} }],
   bootstrap: [AppComponent]

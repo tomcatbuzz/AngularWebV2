@@ -1,3 +1,15 @@
-<p>
-  about works!
-</p>
+<mat-card fxLayout="column" fxLayoutAlign="space-around center" fxFlex class="profile">
+  <mat-card-header>
+  <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Anthony Buzzelli</mat-card-title>
+  </mat-card-header>
+  <div class="image">
+    <img mat-card-image src="../../assets/images/logo.svg" alt="Photo of me">
+  </div>
+  <mat-card-content fxLayoutAlign="center">
+    This is a Bio of me. I hope you enjoy
+  </mat-card-content>
+  <mat-card-actions fxLayoutAlign="center">
+    <button mat-raised-button color="primary" routerLink="/contact">Contact Me</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,23 @@
+@import 'src/variables.scss';
+
+mat-card-header {
+  justify-content: center;
+}
+mat-card-title {
+  text-align: center;
+}
+
+.image {
+  max-width: 400px;
+  max-height: 400px;
+  background-color: red;
+}
+
+.profile {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('../../assets/images/sphere.svg');
+  background-size: cover;
+}

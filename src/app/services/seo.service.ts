@@ -11,8 +11,8 @@ export class SeoService {
   generateTags(config) {
     config = {
       title: 'Tomcatbuzz',
-      description: 'My SEO friendly Angular PWA',
-      image: '',  // add log png
+      description: 'My SEO friendly Angular Webpage',
+      image: './assets/images/angular.png',  // add log png
       slug: '',
       ...config
     };
