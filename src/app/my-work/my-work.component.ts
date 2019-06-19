@@ -13,18 +13,22 @@ export class MyWorkComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Ionic', cols: 1, rows: 1 },
+          { title: 'Angular', cols: 1, rows: 1 },
+          { title: 'VueJS', cols: 1, rows: 1 },
+          { title: 'UI/UX', cols: 1, rows: 1 },
+          { title: 'Logo', cols: 1, rows: 1 },
+          { title: 'Design', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Ionic', cols: 2, rows: 1 },
+        { title: 'Angular', cols: 1, rows: 1 },
+        { title: 'VueJS', cols: 1, rows: 2 },
+        { title: 'UI/UX', cols: 1, rows: 1 },
+        { title: 'Logo', cols: 2, rows: 1 },
+        { title: 'Design', cols: 1, rows: 1 }
       ];
     })
   );
