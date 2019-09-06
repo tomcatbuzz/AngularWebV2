@@ -14,13 +14,13 @@ export class MainNavComponent {
     .pipe(
       map(result => result.matches)
     );
-  
+
   otherTheme = false;
 
   switchTheme() {
     this.otherTheme = !this.otherTheme;
   }
-  
+
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }

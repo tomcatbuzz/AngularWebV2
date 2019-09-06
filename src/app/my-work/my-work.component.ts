@@ -23,15 +23,23 @@ export class MyWorkComponent {
       }
 
       return [
-        { title: 'Ionic', cols: 2, rows: 1 },
+        { title: 'Ionic', cols: 1, rows: 1 },
         { title: 'Angular', cols: 1, rows: 1 },
-        { title: 'VueJS', cols: 1, rows: 2 },
+        { title: 'VueJS', cols: 1, rows: 1 },
         { title: 'UI/UX', cols: 1, rows: 1 },
-        { title: 'Logo', cols: 2, rows: 1 },
+        { title: 'Logo', cols: 1, rows: 1 },
         { title: 'Design', cols: 1, rows: 1 }
       ];
     })
   );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  private cardContent(cardData: string, image: string, links: string) {
+    const data = JSON.stringify({
+      cardData,
+      image,
+      links
+    });
+  }
 }

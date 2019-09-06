@@ -29,7 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('/combined-sw.js', { enabled: environment.production }),
     FlexLayoutModule,
     MaterialModule,
     AngularFireModule.initializeApp(environment.firebase),
