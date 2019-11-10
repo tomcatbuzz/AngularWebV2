@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '../material/material.module';
 import { AboutComponent } from './about.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [AboutComponent],
   imports: [
     CommonModule,
-    MaterialModule,
-    FlexLayoutModule,
+    SharedModule,
     RouterModule.forChild([{ path: '', component: AboutComponent }])
   ]
 })

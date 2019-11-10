@@ -8,7 +8,7 @@ export class UIService {
 
   showSnackbar(message, action, duration) {
     this.snackbar.open(message, action, {
-      duration: duration
+      duration
     });
   }
 }
